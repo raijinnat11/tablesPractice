@@ -48,6 +48,11 @@ var allBiases = [
         let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath)
 
          cell.textLabel?.text = allBiases[indexPath.row].title
+        
+        cell.detailTextLabel?.text = allBiases[indexPath.row].text
+        
+        cell.imageView?.image = UIImage(named:
+        allBiases[indexPath.row].image)
 
         return cell
     }
